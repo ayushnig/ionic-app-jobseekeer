@@ -14,7 +14,11 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
-  }
+  },
+  { path: 'details', loadChildren: './pages/details/details.module#DetailsPageModule' },
+  { path: 'audioplayer', loadChildren: () => import('./pages/audioplayer/audioplayer.module').then(m => m.AudioplayerPageModule)},
+  { path: 'login', loadChildren: './auth/login/login.module#LoginPageModule' },
+  { path: 'register', loadChildren: './auth/register/register.module#RegisterPageModule' }
 ];
 
 @NgModule({

@@ -1,0 +1,6 @@
+JAVA_HOME=/Library/Java/Home
+export JAVA_HOME;case q! in
+    JAVA_HOME=/Library/Java/Home)
+	
+	;;
+    

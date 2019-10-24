@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card (click)="navigate()">
+        <ion-img src="https://archive.org/services/img/{{book.id}}"></ion-img>
+        <ion-card-header>
+          <ion-card-subtitle>{{book.title}}</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <p>
+            {{book.synopsis}}
+          </p>    
+        </ion-card-content>
+      </ion-card>
+      <ion-button size="small" (click)="startAudio()">Start</ion-button>
+      <ion-button size="small" (click)="ShowChaptersList()">Chapters</ion-button>
+</ion-content>

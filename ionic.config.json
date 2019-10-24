@@ -1,5 +1,7 @@
 {
   "name": "sonnar-library",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
