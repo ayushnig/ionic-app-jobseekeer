@@ -18,7 +18,8 @@ const routes: Routes = [
   { path: 'details', loadChildren: './pages/details/details.module#DetailsPageModule' },
   { path: 'audioplayer', loadChildren: () => import('./pages/audioplayer/audioplayer.module').then(m => m.AudioplayerPageModule)},
   { path: 'login', loadChildren: './auth/login/login.module#LoginPageModule' },
-  { path: 'register', loadChildren: './auth/register/register.module#RegisterPageModule' }
+  { path: 'register', loadChildren: './auth/register/register.module#RegisterPageModule' },
+  { path: 'my-profile', loadChildren: './my-profile/my-profile.module#MyProfilePageModule' }
 ];
 
 @NgModule({

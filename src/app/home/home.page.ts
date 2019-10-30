@@ -28,8 +28,8 @@ export class HomePage {
   queryText: Observable<any>;
   data: any;
   constructor(public navCtrl: NavController, private router: Router, private speechRecognition: SpeechRecognition, private cd: ChangeDetectorRef, private plt: Platform, public httpClient: HttpClient) {
-
   }
+  
   stopListening() {
     this.speechRecognition.stopListening().then(() => {
       this.isRecording = false;
